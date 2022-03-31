@@ -1,0 +1,19 @@
+html {
+    background-color: crimson;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 10vh 1fr 10vh;
+    grid-template-rows: 10vh 7vh 40vh 7vh;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: white;
+}
+.top {
+height: 100%;
+width: 80%;
+}
