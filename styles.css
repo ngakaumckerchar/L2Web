@@ -1,19 +1,32 @@
 html {
     background-color: crimson;
 }
-.cont{
+
+.cont {
     display: grid;
-    grid-template-columns: 10vh 1fr 10vh;
-    grid-template-rows: 10vh 7vh 40vh 7vh;
+    grid-template-columns: 10vh 2fr 10vh;
+    grid-template-rows: 15vh 8vh 50vh 8vh;
 }
-.box{
+
+.box {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: white;
 }
+
 .top {
-height: 100%;
-width: 80%;
+    height: 50vh;
+    width: 22vw;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: black;
 }
