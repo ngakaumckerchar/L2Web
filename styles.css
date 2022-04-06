@@ -16,9 +16,26 @@ html {
     background-color: white;
 }
 
+.topbox{
+    grid-column: 1/4;
+    grid-template-columns: 2vw 10vw 1fr 10vw 2vw;
+    display: grid;
+}
+
 .top {
     height: 50vh;
     width: 22vw;
+}
+
+.links{
+    grid-column: 3/5;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 10vh;
+    width: 10vw;
 }
 
 nav a {
