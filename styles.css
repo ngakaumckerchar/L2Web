@@ -1,25 +1,35 @@
 @font-face {
     font-family: font;
-    src: url(Cafe\ Matcha.ttf);
+    src: url(Font/Cafe\ Matcha.ttf);
 }
-
-
-
+@font-face {
+    font-family: font2;
+    src: url(Font/Papernotes.ttf);
+}
 html {
     background-color: crimson;
 }
 
 .cont {
+    font-family: font2;
     display: grid;
-    grid-template-columns: 10vh 2fr 10vh;
-    grid-template-rows: 15vh 8vh 50vh 8vh;
+    grid-template-columns: 10vw 2fr 10vw;
+    grid-template-rows: 15vh 8vh 2vh 1fr 8vh;
 }
 
 .box {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
+    background-color: white;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2/3;
+    grid-row: 4/5;
     background-color: white;
 }
 
@@ -46,11 +56,12 @@ html {
 
 .link {
     grid-column: 3/5;
-    align-self:center;
+    align-self: center;
     justify-self: right;
     font-family: font;
     font-size: 50px;
 }
+
 nav a {
     color: black;
     text-decoration: none;
@@ -60,12 +71,7 @@ a:hover {
     color: whitesmoke;
     background-color: black;
 }
-
-.shop {
-    background-color: black;
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-    grid-column: ;
-    grid-row: ;
+.cal{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
