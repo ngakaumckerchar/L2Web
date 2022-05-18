@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>project home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calulate(){
+            var data = document.getElementById("sizeData").value;
+            if(data <= 10){
+                document.getElementById('answer').innerHTML = 
+                alert("your size is small");
+            }
+            if (data >= 11 && data < 20) {
+                document.getElementById('answer').innerHTML =
+                    alert("your size is meduim");
+            }
+            if (data >= 21 && data < 30) {
+                document.getElementById('answer').innerHTML =
+                    alert("your size is large");
+            }
+            else{ 
+                document.getElementById('answer').innerHTML = 
+                alert("your too big");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="topbox">
+            <img class="logo" src="Image/Logo - Copy.jpg">
+            <div class="link">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <h2>Size Calculator</h2>
+        <div class="cal">
+            <br>
+            <input type="name" name="size" id="sizeData">
+            <button type="submit" onclick="calulate()">Submit</button>
+            <p id="awswer"></p>
+
+        </div>
+        <div class="box1">
+            <img class="top" src="Image/teeBlack.jpg">
+            <img class="top" src="Image/teeBlack.jpg">
+            <img class="top" src="Image/teeBlack.jpg">
+
+        </div>
+    </div>
+</body>
